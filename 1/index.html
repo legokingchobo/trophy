@@ -1,1 +1,24 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>1위 트로피 정품 인증</title><style>html,body{margin:0;background:#000;min-height:100%;font-family:Arial,"Noto Sans KR",sans-serif}body{min-height:100vh;display:flex;align-items:center;justify-content:center}.wrap{width:100%;max-width:900px;text-align:center}.poster{display:block;width:100%;height:auto;max-height:100vh;object-fit:contain;margin:auto}.fallback{color:#aaa;font-size:14px;padding:12px}</style></head><body><main class="wrap"><img class="poster" src="../images/rank1.png" alt="1위 트로피 정품 인증 이미지"><div class="fallback">1위 트로피 NFC 인증 페이지</div></main></body></html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>1위 트로피 정품 인증</title><style>html,body{margin:0;background:#000;min-height:100%;font-family:Arial,"Noto Sans KR",sans-serif}body{min-height:100vh;display:flex;align-items:center;justify-content:center}.wrap{width:100%;max-width:900px;text-align:center}.poster{display:block;width:100%;height:auto;max-height:100vh;object-fit:contain;margin:auto}.fallback{color:#aaa;font-size:14px;padding:12px}</style></head><body><main class="wrap"><style>
+  body { background:#000; }
+  .tv { position:relative; max-width:540px; margin:0 auto; }
+  .tv video { width:100%; height:auto; display:block; }
+  .tv button { position:absolute; right:12px; bottom:12px; padding:10px 16px;
+               border:0; border-radius:999px; background:rgba(255,255,255,.85);
+               color:#000; font-size:16px; font-weight:700; }
+</style>
+<div class="tv">
+  <video id="tv-video" src="https://legokingchobo.github.io/trophy/images/trailer.mp4"
+         autoplay loop muted playsinline></video>
+  <button id="tv-sound" type="button">🔇 소리 켜기</button>
+</div>
+<script>
+  (function () {
+    var v = document.getElementById('tv-video');
+    var b = document.getElementById('tv-sound');
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.currentTime = 0; v.play(); }
+      b.textContent = v.muted ? '🔇 소리 켜기' : '🔊 소리 끄기';
+    });
+  })();
+</script><div class="fallback">1위 트로피 NFC 인증 페이지</div></main></body></html>
